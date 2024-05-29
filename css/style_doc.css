@@ -1,0 +1,179 @@
+body {
+    height: 2000px;
+    background-color: #EEEEEE;
+}
+
+li {
+    list-style-type:disc;
+}
+
+div.navBar {
+    height: 50px;
+    background-color: #7E8EF1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* opacity: 0.7; */
+}
+
+div.navBar ul {
+    margin-right: 20px;
+    margin-top: 12px;
+    text-align: right;
+}
+
+div.navBar li {
+    display: inline-block;
+    padding-left: 15px;
+    /* padding-top: 5px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.navBar ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+/* End of NavBar */
+
+div.container {
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 60px;
+    background-color: #D1D8C5;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    line-height: 25px;
+
+}
+
+div.container h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+div.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+div.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+figure {
+    text-align: center;
+}
+
+div.articles {
+    border: 1px solid black;
+    /* margin: 20px auto; */
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* width: 1000px; */
+}
+
+div.article {
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
+div.article li {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:18px;
+}
+
+div.article p {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+div.article blockquote {
+    margin: 0 0 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.article img {
+    width: 500px;
+    margin: 0 50px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+} */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

@@ -3,93 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coba Git</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <title>Belajar Git dan Github</title>
+    <link rel="stylesheet" href="../../css/style_doc.css">
 </head>
 <body>
-    <!-- NavBar -->
-    <ul class="listNavBar">
-        <li><a href="../../index.html">Home</a></li>
-        <!-- <li><a href="../../hdoc.html">H-Doc</a></li> -->
-        <!-- Dropdown H-Doc 
-            <ul> 
-            <li>Networking</li>
-            <li>Programming</li>
-            <li>Cybersecurity</li>
-        </ul> -->
-        <!-- <li><a href="#">S-Doc</a></li>
-        <li><a href="about.html">About</a></li> -->
-    </ul>
-    <!-- End of NavBar -->
+    <div class="navBar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../doc.html">Documentation</a></li>
+            <li><a href="../../about.html">About</a></li>
+        </ul>        
+    </div>
 
-    <h1>Catatan Pembelajaran Git dan Github</h1>
-    <h2>Episode 1</h2>
-    <p>checkout</p>
-    <p>Digunakan untuk kembali ke versi sebelumnya atau ke commit yang sebelumnya pernah dilakukan atau ke branch lain. untuk kembali ke versi/commit sebelumnya, gunakan perintah : </p> 
-    <p>git checkout "5 angka hash"</p>
-    <p>Angka hash tersebut berasal dari perintah "git log". git log untuk spesifik mencari file/hal tertentu gunakan --, git log -- namaFile atau namaString</p>
-    <p>menambahkan branch, dengan perintah : git branch (nama_branch_baru)</p>
-    <p>pindah branch, git checkout (nama_branch)</p>
-    
-    <h2>Episode 6</h2>
-    <p>Merge: 1. Fast Forward Merge, 2. Three-way Merge</p>
-    <p>Fast Forward: Direct Path dari branch yang mau dimerge</p>
-    <p>perintahnya: git merge namaBranch</p>
-    <p>menghapus branch, perintahnya adalah : git branch --merged untuk mengetahui branch yang sudah dimerge dan git branch -d namaBranch untuk menghapus branchnya </p>
-    <p>git branch -D namaBranch : untuk menghapus branch tanpa merging branch</p>
-    <p>Three-way Merge</p>
-    <p>Merge ini terjadi jika, branch (master) yang ingin dimerge tidak direct path</p>
-    <p>perintahnya menggunakan: git merge staff -m "pesannya", atau jika tanpa -m "pesan" maka nanti akan otomatis membuka file editor untuk menuliskan pesan commit. karena merge tipe ini akan melakukan commit, sehingga membutuhkan pesan commit.</p>
-    <h2>Episode 7</h2>
-    <p>Merge Conflict: ketika ada 2 branch yang mengerjakan repo/file yang sama dan saling tumpang tindih (conflict) perubahanannya</p>
-    <p>Perintah untuk merge sama saja, tetapi jika nanti ada conflict, secara otomatis file editor akan dibuka untuk menampilkan baris-baris yang conflict. pada file editor tersebut hanya perlu untuk merapihkan yang diinginkan dan menghapus yang tidak jadi dipakai dan juga menghapus marker yang dibuat sebagai tandaan dari conflict branch</p>
-    <p>Pindah ke commit dengan git checkout (7 hash number)</p>
-    <p>ketika kita pindah ke commit yang terdahulu, secara otomatis HEAD yang menujuk ke branch akan detach, kemudian untuk melanjutkan progres dari commit tersebut, perlu menambahkan lagi branch baru : git branch namaBranch</p>
-    <script src="script.js"></script>
-    <h2>Episode 8</h2>
-    <p>git cloning | cloning biasanya dilakukan ke folder yang sudah ada di remote tetapi belum ada di lokal</p>
-    <p>untuk melakukan cloning dari remote (github) gunakan perintah : git clone url</p>
-    <p>git remote</p>
-    <p>git remote -v</p>
-    <p>git config --list</p>
-    <p>git init to remote | ini dilakukan ketika sudah ada folder progress yang ada di lokal, namun belum memiliki repo di remote lakukan ini</p>
-    <p>Perlu manual untuk membuat repo di remote, tetapi untuk proses yang ini dalam pemilihannya tidak perlu membuat file readme. dan jalan kan beberapa perintah di folder lokal</p>
-    <p>git init pada folder untuk menjadikannya repo, kemudian</p>
-    <p>git remote add origin urlnya | origin merupakan default dan bisa diubah sesuai kita </p>
-    <p>setelah folder menjadi repo dan telah terhubung ke repo remote. setelahnya sudah bisa melakukan hal seperti biasa. hanya saja setelah commit ataupun akhir pekerjaan lakukan perintah</p>
-    <p>git push -u origin master | perintah ini dilakukan sekali saja, ketika melakukan di origin* dan branch* yang sama, setelahnya hanya perlu perintah git push | nama origin dan branch bisa disesuaikan. </p>
-    <p>git fetch namaRemote| namaRemote bisa opsional jika, remote yang digunakan hanya satu, jika banyak harus disesuaikan ke arah remote yang mana. digunakan untuk mengetahui perubahan commit di remote</p>
-    <p>git pull namaRemote| namaRemote -=-. digunakan untuk mengambil file yang ada di remote </p>
-    <p>git fetch dan pull sejauh ini dilakukan ketika terjadi merge conflict. tetapi mungkin bisa jadi ada kegunaan lainnya/</p>
+    <div class="container">
+        <h1>Belajar Git dan Github </h1>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=-ws4AqFXphitqf7T&amp;list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <a href="https://www.youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf">Full Playlist</a>
 
-    <h2>Episode 10</h2>
-    <p>Multiple Remotes</p>
-    <p>Forked Repo -> Forking Repo -> Local Repo</p>
-    <p>di lokal repo perlu menambahkan 2 git remote add namaRemote urlRemote</p>
-    <p>git fetch namaForkedRemote</p>
-
-    <h2>Episode 11</h2>
-    <p>Remote Branch | Pull request ke Forked Remote Repo</p>
-    <p>Sidenote: buat branch baru untuk melakukan pull request nantinya, sehingga tidak mengganggu branch master/main</p>
-    <p>kemudian setelah membuat branch baru dan mengubah/update forked repo, kemudian commit dan push ke origin/forkingrepo (bukan repo asal).</p>
-    <p>kemudian untuk pull request lakukan pada website githubnya</p>
-    <p>kemudian untuk mengupdate yang dilokal terhadapt forked remote repo, lakukan perintah git fetch namaForkedRemote, dan perintah git merge namaForkedRemote/namaBranch untuk melakukan merge antara fetched repo dan lokal repo</p>
-    <p>git push origin --delete namaBranchBaru | digunakan untuk menghapus branch yang sudah tidak terpakai dari proses diatas tadi. perintah tersebut untuk menghapus branch yang ada di github (remote reponya) bukan lokal repo</p>
-    <h2>Episode 12</h2>
-    <p>.gitignore</p>
-    <p>file yang digunakan untuk mengecualikan suatu file/folder agar tidak ikut dalam proses git add atau git commit.</p>
-    <a href="https://gitignore.io">Generate file gitignore</a>
-    <h2>Episode 13</h2>
-    <p>Git Rebase</p>
-    <p>Git Workflow -> Merging dan Rebase</p>
-    <p>Sidenote: untuk berjaga-jaga dalam proses merge. lakukan git pull terlebih dahulu</p>
-    <p>Melakukan rebase untuk menghindari threeway. perintahnya git rebase namaBranch</p>
-    <p>dan lakukan git rebase namaBranchBaru</p>
-    <!-- Episode 14 -->
+    <!-- Content -->
+    <div class="articles">
+        <div class="article">
+            <h2>Episode 1</h2>
+            <p>checkout</p>
+            <p>Digunakan untuk kembali ke versi sebelumnya atau ke commit yang sebelumnya pernah dilakukan atau ke branch lain. untuk kembali ke versi/commit sebelumnya, gunakan perintah : </p> 
+            <p>git checkout "5 angka hash"</p>
+            <p>Angka hash tersebut berasal dari perintah "git log". git log untuk spesifik mencari file/hal tertentu gunakan --, git log -- namaFile atau namaString</p>
+            <p>menambahkan branch, dengan perintah : git branch (nama_branch_baru)</p>
+            <p>pindah branch, git checkout (nama_branch)</p>
+        </div>
+        <div class="article">
+            <h2>Episode 6</h2>
+            <p>Merge: 1. Fast Forward Merge, 2. Three-way Merge</p>
+            <p>Fast Forward: Direct Path dari branch yang mau dimerge</p>
+            <p>perintahnya: git merge namaBranch</p>
+            <p>menghapus branch, perintahnya adalah : git branch --merged untuk mengetahui branch yang sudah dimerge dan git branch -d namaBranch untuk menghapus branchnya </p>
+            <p>git branch -D namaBranch : untuk menghapus branch tanpa merging branch</p>
+            <p>Three-way Merge</p>
+            <p>Merge ini terjadi jika, branch (master) yang ingin dimerge tidak direct path</p>
+            <p>perintahnya menggunakan: git merge staff -m "pesannya", atau jika tanpa -m "pesan" maka nanti akan otomatis membuka file editor untuk menuliskan pesan commit. karena merge tipe ini akan melakukan commit, sehingga membutuhkan pesan commit.</p>
+        </div>
+        <div class="article">
+            <h2>Episode 7</h2>
+            <p>Merge Conflict: ketika ada 2 branch yang mengerjakan repo/file yang sama dan saling tumpang tindih (conflict) perubahanannya</p>
+            <p>Perintah untuk merge sama saja, tetapi jika nanti ada conflict, secara otomatis file editor akan dibuka untuk menampilkan baris-baris yang conflict. pada file editor tersebut hanya perlu untuk merapihkan yang diinginkan dan menghapus yang tidak jadi dipakai dan juga menghapus marker yang dibuat sebagai tandaan dari conflict branch</p>
+            <p>Pindah ke commit dengan git checkout (7 hash number)</p>
+            <p>ketika kita pindah ke commit yang terdahulu, secara otomatis HEAD yang menujuk ke branch akan detach, kemudian untuk melanjutkan progres dari commit tersebut, perlu menambahkan lagi branch baru : git branch namaBranch</p>
+        </div>
+        <div class="article">
+            <h2>Episode 8</h2>
+            <p>git cloning | cloning biasanya dilakukan ke folder yang sudah ada di remote tetapi belum ada di lokal</p>
+            <p>untuk melakukan cloning dari remote (github) gunakan perintah : git clone url</p>
+            <p>git remote</p>
+            <p>git remote -v</p>
+            <p>git config --list</p>
+            <p>git init to remote | ini dilakukan ketika sudah ada folder progress yang ada di lokal, namun belum memiliki repo di remote lakukan ini</p>
+            <p>Perlu manual untuk membuat repo di remote, tetapi untuk proses yang ini dalam pemilihannya tidak perlu membuat file readme. dan jalan kan beberapa perintah di folder lokal</p>
+            <p>git init pada folder untuk menjadikannya repo, kemudian</p>
+            <p>git remote add origin urlnya | origin merupakan default dan bisa diubah sesuai kita </p>
+            <p>setelah folder menjadi repo dan telah terhubung ke repo remote. setelahnya sudah bisa melakukan hal seperti biasa. hanya saja setelah commit ataupun akhir pekerjaan lakukan perintah</p>
+            <p>git push -u origin master | perintah ini dilakukan sekali saja, ketika melakukan di origin* dan branch* yang sama, setelahnya hanya perlu perintah git push | nama origin dan branch bisa disesuaikan. </p>
+            <p>git fetch namaRemote| namaRemote bisa opsional jika, remote yang digunakan hanya satu, jika banyak harus disesuaikan ke arah remote yang mana. digunakan untuk mengetahui perubahan commit di remote</p>
+            <p>git pull namaRemote| namaRemote -=-. digunakan untuk mengambil file yang ada di remote </p>
+            <p>git fetch dan pull sejauh ini dilakukan ketika terjadi merge conflict. tetapi mungkin bisa jadi ada kegunaan lainnya/</p>
+        </div>
+        <div class="article">
+            <h2>Episode 10</h2>
+            <p>Multiple Remotes</p>
+            <p>Forked Repo -> Forking Repo -> Local Repo</p>
+            <p>di lokal repo perlu menambahkan 2 git remote add namaRemote urlRemote</p>
+            <p>git fetch namaForkedRemote</p>
+        </div>
+        <div class="article">
+            <h2>Episode 11</h2>
+            <p>Remote Branch | Pull request ke Forked Remote Repo</p>
+            <p>Sidenote: buat branch baru untuk melakukan pull request nantinya, sehingga tidak mengganggu branch master/main</p>
+            <p>kemudian setelah membuat branch baru dan mengubah/update forked repo, kemudian commit dan push ke origin/forkingrepo (bukan repo asal).</p>
+            <p>kemudian untuk pull request lakukan pada website githubnya</p>
+            <p>kemudian untuk mengupdate yang dilokal terhadapt forked remote repo, lakukan perintah git fetch namaForkedRemote, dan perintah git merge namaForkedRemote/namaBranch untuk melakukan merge antara fetched repo dan lokal repo</p>
+            <p>git push origin --delete namaBranchBaru | digunakan untuk menghapus branch yang sudah tidak terpakai dari proses diatas tadi. perintah tersebut untuk menghapus branch yang ada di github (remote reponya) bukan lokal repo</p>
+        </div>
+        <div class="article">
+            <h2>Episode 12</h2>
+            <p>.gitignore</p>
+            <p>file yang digunakan untuk mengecualikan suatu file/folder agar tidak ikut dalam proses git add atau git commit.</p>
+            <a href="https://gitignore.io">Generate file gitignore</a>
+        </div>
+        <div class="article">
+            <h2>Episode 13</h2>
+            <p>Git Rebase</p>
+            <p>Git Workflow -> Merging dan Rebase</p>
+            <p>Sidenote: untuk berjaga-jaga dalam proses merge. lakukan git pull terlebih dahulu</p>
+            <p>Melakukan rebase untuk menghindari threeway. perintahnya git rebase namaBranch</p>
+            <p>dan lakukan git rebase namaBranchBaru</p>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

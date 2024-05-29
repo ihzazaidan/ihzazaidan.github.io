@@ -1,6 +1,9 @@
-/* body {
-    background-color: rgb(39, 121, 153);
-} */
+body {
+    background-image: url(../img/bg-img.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: lightskyblue; */
+}
 
 div.header {
     /* border: 1px solid black; */
@@ -21,7 +24,7 @@ div.header {
 
 .navbar li a {
     font-size: 20px;
-    /* color: white; */
+    color: white;
     text-decoration: none;
 }
 
@@ -35,7 +38,8 @@ div.header {
 
 div.container {
     width: 1200px;
-    background-color: gainsboro;
+    height: 700px;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS 3</title>
+    <link rel="stylesheet" href="../../css/style_doc.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <div class="navBar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../doc.html">Documentation</a></li>
+            <li><a href="../../about.html">About</a></li>
+        </ul>        
+    </div>
+
+    <!-- Container Content -->
+    <div class="container">
+
+        <h1>Belajar CSS 3 </h1>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=D7-ied1xA35YrzRU&amp;list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <a href="https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa">Full Playlist</a>
+
+        <!-- Content -->
+        <div class="articles">
+            <div class="article">
+                <h2>Episode 1 | Intro</h2>
+                <p>Pada video ini akan mempelajari property-property yang sering digunakan pada css3</p>
+                <blockquote> <!-- Untuk Penulisan Perintah/Kode -->
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 2 | CSS3 : Border Radius</h2>
+                <p>property border-radius:; digunakan untuk membuat sisi-sisi elemen akan menumpul. perlu diingat, bahwa ketika border-radius digunakan, isi dari elemen akan keluar dari elemen tersebut karena perubahan pada elemennya.</p>
+                <p>Mengatasi hal diatas, bisa menggunakan property oveflow:hidden; sehingga isi dari elemennya akan disembunyikan ketika berada diluar dari elemen tersebut.</p>
+                <p>Property Border Radius dan Turunannya: </p>
+                <blockquote>
+                    border-radius:value; <br>
+                    border-radius:valueAtasKanan valueBawahKanan valueBawahKiri valueAtasKiri; <br>
+                    border-top-right-radius:value; <br>
+                    border-top-left-radius:value; <br>
+                    border-bottom-right-radius:value; <br>
+                    border-bottom-left-radius:value;
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 3 | CSS3 : Opacity</h2>
+                <p>CSS3 memiliki property opacity yang dapat digunakan untuk membuat elemen menjadi transparant</p>
+                <p>property opacity menginheritance/menurunkan propertynya ke elemen didalamnya. sehingga, ketika parentnya memiliki opacity, childnya tidak bisa memiliki warna solid</p>
+                <p>Property opacity dan Turunannya: </p>
+                <blockquote>
+                    opacity:value; valuenya antara 0-1, 0 sangat transparant - 1 tidak transparant
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 4 | CSS3 : RGBa & HSLa</h2>
+                <p>Pada episode sebelumnya, property opacity digunakan untuk melakukan transparansi tetapi ke elemennya, dan opacity menginheritance property tersebut ke childnya. maka, ketika parentnya transparant, childnya tidak akan pernah bisa solid.</p>
+                <p>Oleh karena itu, untuk mengatasinya bisa dengan property RGBa atau HSLa, property ini melakukan transparansi ke warna bukan lagi ke elemennya. tetapi property ini tidak bisa melakukan transparansi ke image</p>
+                <p>Property background-color dan Turunannya: </p>
+                <blockquote>
+                    background-color: rgba(value, value, value, valueOpacity); <br>
+                    background-color: hsla(value, value, value, valueOpacity);
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 5 | CSS3 : Box Shadow</h2>
+                <p>Property box-shadow:; digunakan untuk memberikan bayangan ke elemennya</p>
+                <p>Property Box Shadow dan Turunannya</p>
+                <blockquote>
+                    box-shadow:inset(opsional) x-offset(px) y-offset(px) blur(px) spread(px, opsional) color(name, rgba, hex, dll);
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 6 | CSS3 : Box Shadow p2</h2>
+                <p>Implementasi value inset dan value spread</p>
+                <p>Multiple Shadow: box-shadow dapat memberikan lebih dari satu shadow ke elemen dengan memisahkan value pada property box-shadow dengan koma (,)</p>
+                <p>Contoh Multiple Shadow: </p>
+                <blockquote>
+                    box-shadow:inset x-offset y-offset blur spread color,inset x-offset y-offset blur spread color; <br> maka pada elemen ini nantinya akan memiliki 2 shadow. bisa ditambahkan lagi dengan memberi value dengan dipisahkan koma (,)
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 7 | CSS3 : Text Shadow</h2>
+                <p>property text-shadow memberikan bayangan pada text. value property sama seperti box shadow hanya saja tidak ada inset dan spread, dan bisa juga memiliki multiple shadow.</p>
+                <p>Sintaks properti text-shadow: </p>
+                <blockquote>
+                    text-shadow:inset x-offset y-offset blur color;
+                </blockquote>
+            </div>
+            <div class="article">
+                <h2>Episode 8 | CSS3 : Linear Gradient</h2>
+                <p>Teknik untuk memberikan warna gradasi pada elemen: linear dan radial gradient</p>
+                <p>Linear Gradient memberikan warna gradasi secara linear, linear gradient membutuhkan minimal 2 warna dan bisa memiliki lebih dari 2 warna. tetapi, linear gradient ini bukan property css3 tetapi value dari property background-image</p>
+                <p>Color stop: digunakan untuk mengatur antar warna yang digunakan sebagai gradasi. penerapannya dengan menaruh nilai persen atau px di warna yang dijadikan gradasi</p>
+                <p>Sintaks linear-gradient: </p>
+                <blockquote>
+                    background-image: linear-gradient(sudut | arah, warnaAwal x%, warnaAkhir x%, ..., warnaN x%) 
+                </blockquote>
+                <p>value sudut menggunakan derajat: penulisannya adalah dengan angka diikut dengan deg. cth: background-image: linear-gradient(90deg, red,green)</p>
+                <p>value dengan arah penulisannya: background-image: linear-gradient(to left, red, green)</p>
+                <p>List value arah: </p>
+                <ul>
+                    <li>to left</li>
+                    <li>to right</li>
+                    <li>to bottom</li>
+                    <li>to top</li>
+                    <li>to left top</li>
+                    <li>to left bottom</li>
+                    <li>to right bottom</li>
+                    <li>to right top</li>
+                </ul>
+            </div>
+            <div class="article">
+                <h2>Episode 9 | CSS3 : Radial Gradient</h2>
+                <p>Radial Gradient: memberikan gradasi warna dengan cara radial (melingkar)</p>
+                <p>Sintaks</p>
+                <blockquote>
+                    Sederhana <br>
+                    background-image: radial-gradient(warnaAwal x%, warnaAkhir x%, ..., warnaN x%) <br>
+                    Full Sintaks <br>
+                    background-image: radial-gradient(tipe jangkauan at posisi-y posisi-x, warnaAwal x%, warnaAkhir x%, ..., warnaN x%) <br>
+                </blockquote>
+                <p>Value tipe: elipse (default) atau circle</p>
+                <p>Value jangkauan: jarak dari pusat gradient ke sisi terluarnya: closest-corner, closest-side, farthest-corner, farthest-side</p>
+                <p>Value posisi: digunakan untuk memindahkan pusat gradasi. posisi-x: top, center, bottom, px. posisi-y: left, center, right, px</p>
+            </div>
+            <div class="article">
+                <h2>Episode 10 | CSS3 : Font Face</h2>
+                <p>property @font-face digunakan untuk mengelola font pada css3 yang kita gunakan</p>
+                <p>Beberapa cara mengelola font: google font (harus online jika menggunakan link href) atau @font-face property css3</p>
+                <p>Untuk menggunakan @font-face, kita perlu mendownload dahulu file fontnya dan ikuti sintaks dibawah</p>
+                <p>Sintaks Font Face: </p>
+                <img src="img/sintaks-Font-Face.PNG" alt="Sintaks Font Face">
+            </div>
+            <div class="article">
+                <h2>Episode 11 | CSS: Web Font Generator</h2>
+                <p>Untuk web, lebih baik gunakan tipe WOFF untuk font pada website dibanding TTF/OTF</p>
+                <p>web font generator digunakan untuk mengubah tipe font. misal dari ttf ke woff atau yang lainnya.</p>
+                <p>Web Generator ada di website <a href="https://www.fontsquirrel.com/">Font Squirrel</a></p>
+            </div>
+            <div class="article">
+                <h2>Episode 12 | CSS3 : Vendor Prefix</h2>
+                <p>Vendor prefix adalah sintaks khusus yang harus ditambahkan pada beberapa property CSS3 agar dapat dijalankan di browser lain</p>
+                <p>sintaks spesifik berbeda tiap browser/vendor</p>
+                <p>Vendor Prefixes</p>
+                <ul>
+                    <li>-webkit-</li>
+                    <p>(Chrome,Safari,Opera)</p>
+                    <li>-moz-</li>
+                    <p>(Firefox)</p>
+                    <li>-ms-</li>
+                    <p>(Internet Explorer)</p>
+                    <li>-o-</li>
+                    <p>(Opera)</p>
+                </ul>
+                <p>Daftar Property CSS3 yang butuh Vendor Prefix dari plugin emmet atau website berikut: </p>
+                <a href="https://shouldiprefix.com/">Web 1</a>
+                <a href="https://caniuse.com/">Web 2</a>
+                <a href="https://pleeease.iamvdo.me/play/">Web 3</a>
+            </div>
+            <div class="article">
+                <h2>Episode 13 | CSS3 : Filter</h2>
+                <p>Property filter digunakan untuk memberikan efek visual pada gambar, background atau border</p>
+                <p>Sintaks properti filter</p>
+                <blockquote>
+                    filter: tipeFilter();
+                </blockquote>
+                <p>List tipe filter</p>
+                <ul>
+                    <li>blur(px)</li>
+                    <li>brightness(angka | %)</li>
+                    <li>contrast(angka | %)</li>
+                    <li>grayscale(angka | %)</li>
+                    <li>invert(angka | %)</li>
+                    <li>opacity(angka | %)</li>
+                    <li>drop-shadow(sama seperti box-shadow) | bisa juga digunakan pada text dan elemen</li>
+                    <li>sepia(angka | %)</li>
+                    <li>hue-rotate(deg)</li>
+                    <li>saturate(angka | %)</li>
+                </ul>
+            </div>
+            <div class="article">
+                <h2>Episode 14 | CSS3 : Transform</h2>
+                <p>property transform yang digunakan untuk memanipulasi format visual dari elemen HTML. transform bisa 2D dan 3D </p>
+                <p>Sintaks property transform</p>
+                <blockquote>
+                    transform: fungsi();
+                </blockquote>
+                <p>property form bisa digunakan kombinasi antar fungsi()nya</p>
+                <p>value fungsi ada beberapa: </p>
+                <ul>
+                    <li>scale(angkaXY | angkaX, angkaY), scaleX(angka), scaleY(angka)</li>
+                    <p>memperbesar/memperkecil</p>
+                    <li>rotate(deg), rotateX(deg), rotateY(deg)</li>
+                    <p>memutar: bisa kombinasi semua rotate, rotateX dan Y dipisah dengan spasi</p>
+                    <li>skew(deg),skewX(deg), skewY(deg)</li>
+                    <p>membuat condong/miring</p>
+                    <li>translate(px), translateX(px), translateY(px)</li>
+                    <p>mengubah posisi</p>
+                </ul>
+            </div>
+            <div class="article">
+                <h2>Episode 15 | CSS3 : Transition</h2>
+                <p>Property transition ini digunakan untuk mengubah nilai dari property HTML secara halus</p>
+                <p>transition vs. animation: perbedaannya hanya pada kondisinya, transition hanya memiliki kondisi awal -> kondisi akhir, diantara kondisi itu disebut transisi. animasi memiliki banyak keyframe</p>
+                <p>Sintaks property transition</p>
+                <blockquote>
+                    transition: property(opsional) durasi(s/ms) fungsi(opsional) delay(s/ms, opsional)
+                </blockquote>
+                <p>gunakan property transition pada kondisi awal</p>
+                <p>value property defaultnya all, dan nama-property: ini digunakan untuk mengatur yang mana saja yang ditransisi atau none</p>
+                <p>Tipsnya: gunakan sebuah div atau kontainer agar transisinya jauh lebih baik</p>
+            </div>
+            <div class="article">
+                <h2>Episode 16 | CSS3 : Transition p2</h2>
+                <p>fungsi transisi / timing function</p>
+                <p>property transition: fungsi; : nilainya ease (default), ease-in, ease-out, ease-in-out, linear, cubic-bezier(w,x,y,z)</p>
+                <p>property transition: delay(s/ms)</p>
+                <p>format kombinasi dipisahkan dengan , (koma): transition: margin-left 2s, transform 2s 3s;</p>
+            </div>
+            <div class="article">
+                <h2>Episode 17 | CSS3 : Animation</h2>
+                <p></p>
+                <p>Sintaks untuk Animation</p>
+                <img src="img/sintaks-animation.PNG" alt="Animation">
+                <blockquote>
+                    animation: namaFungsiAnimation durasi timing-function delay iteration-count direction fill-mode play-state
+                </blockquote>
+                <p>Gunakan persen untuk pembuatan keyframes animation agar mudah membuat beberapa keyframe antar kondisi awal dan akhir</p>
+                <p>Daftar Values dari property Animation <a href="https://www.w3schools.com/cssref/css3_pr_animation.php">Disini</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

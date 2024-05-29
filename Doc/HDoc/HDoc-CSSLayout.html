@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layouting</title>
+    <link rel="stylesheet" href="../../css/style_doc.css">
+</head>
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../doc.html">Documentation</a></li>
+            <li><a href="../../about.html">About</a></li>
+        </ul>        
+    </div>
+    <div class="container">
+
+        <h1>Belajar CSS Layouting</h1>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=j9mRLoc89RYGx_Z5&amp;list=PLFIM0718LjIUu4Ju9GUL5zpLcuq08TKYr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figure>
+        <a href="https://www.youtube.com/playlist?list=PLFIM0718LjIUu4Ju9GUL5zpLcuq08TKYr">Full Playlist</a>
+        
+        <div class="episodes">
+
+            <h2>Episode 1 | Display</h2>
+            <p>
+                div memiliki default display:block dan span memiliki default display:inline. semua elemen hanya memiliki 2 default display, block atau inline.
+            </p>
+            <p>4 value dari display</p>
+            <ul>
+                <li>inline</li>
+                <p>Tidak menambah baris baru, lebar dan tinggi hanya sebesar konten didalamnya, tidak dapat mengatur tinggi dan lebar pada inline, margin dan padding hanya horizontal tidak vertikal</p>
+                <li>inline-block</li>
+                <p>Harus diset secara manual, perilaku dasarnya seperti inline, perbedaannya inline-block dapat mengatur tinggi dan lebarnya</p>
+                <li>block</li>
+                <p>Secara default menambahkan baris baru, defaultnya akan memenuhi lebar browser/parent-nya, dapat diatur tinggi dan lebarnya, block dapat menyimpan inline, inline-block atau block lagi</p>
+                <li>none</li>
+                <p>digunakan untuk menghilangkan elemen</p>
+            </ul>
+            <blockquote> <!-- Untuk Penulisan Perintah/Kode -->
+            </blockquote>
+        </div>
+            
+        <div class="episodes">
+            <h2>Episode 2 | Dimensi & Overflow</h2>
+            <p>Dimensi: width dan height | px, %, in,cm,mm,pt,pc.</p>
+            <p>Overflow: visible (default), auto, hidden, scroll | digunakna untuk bereaksi terhadap konten yang over dari kontainer/parentnya</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 3 | Box Model </h2>
+            <p>Margin, Padding, Border, dan Content. Pada box model, yang dapat diatur hanya margin, padding, dan border.</p>
+            <p>property setiap margin terdiri dari, margin-left, margin-right, margin-top, margin-botom, dan margin untuk secara keseluruhan sisinya. padding dan border memiliki semua property yang tadi</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 4 | Box Model: Margin</h2>
+            <ul>
+                <li>margin-top</li>
+                <li>margin-right</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+                <li>margin</li>
+            </ul>
+            <p>Overlapping Margin: Terjadi ketika menggabungkan 2 margin (misal, margin-left dan margin-right) antar 2 elemen</p>
+            <p>Overlapping Vertikal: akan mengambil nilai yang lebih besar tanpa menambahkan. misal margin-botom 150px dari elemen A dan margin-top 50px dari elemen B. maka, tidak ada perubahan atau penambahan jadi 200px antar elemen A dan B.</p>
+            <p>Overlapping Horizontal: akan menambahkan margin-right dan margin-left dari 2 elemen yang saling overlap</p>
+            <p>Negatif Margin: memberikan nilai negatif -0px untuk menggerakan ke arah sebaliknya. misal margin-left: -150px, maka daripada mengeser ke arah kanan 150px, maka yang terjadi adalah menggeser ke arah kiri sebesar 150px.</p>
+            <p>Auto Margin: hanya pada margin-left dan margin-right. hal ini akan menempatkan ke tengah-tengah dari parentnya.</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 5 | Box Model:Padding, Border, & Box Sizing</h2>
+            <ul>
+                <li>padding-top</li>
+                <li>padding-right</li>
+                <li>padding-bottom</li>
+                <li>padding-left</li>
+                <li>padding</li>
+            </ul>
+            <p>Padding tidak memiliki nilai negatif dan tidak memiliki nilai auto</p>
+            <p>Padding menambah ukuran elemen.</p>
+            <p>Border: seperti padding, menambahkan ukuran elemen</p>
+            <ul>
+                <li>border-top</li>
+                <li>border-right</li>
+                <li>border-bottom</li>
+                <li>border-left</li>
+                <li>border</li>
+            </ul>
+            <p>Border: style | solid, dotted, dashed, double</p>
+            <p>Kodenya:</p>
+            <blockquote>
+                border: 5px solid black; <br>
+                border: tebal style warna
+            </blockquote>
+            <p>Box Sizing: digunakan untuk memaksa elemen-elemen yang ada diturunannya untuk mengikuti parentnya. padding, border akan mengikuti secara otomatis</p>
+
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 6 | Box Model: CSS Reset</h2>
+            <p>Digunakan untuk mengatur ulang nilai-nilai default dari elemen, khususnya margin dan padding.</p>
+
+            <p>* (asterisk) adalah selector universal</p>
+
+            <p>Cara penggunaannya: bisa dengan selector seperti body, h1, p atau menggunakan selector universal, atau ke website yang menyediakan daftar selector untuk css reset</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 8 | Float</h2>
+            <p>Float merupakan properti CSS untuk mengatur posisi elemen. Float dapat memaksa elemen untuk berada di sebelah kiri atau kanan dari parent/pembungkusnya. Hal ini menjadikan elemen yang memiliki property float akan dianggap tidak ada/menjadi display inline</p>
+            <p>value float: none (default), left, right</p>
+            <p>Normal flow (display) vs Out-of flow (float)</p>
+            <p>Jika semua konten dari suatu pembungkung menjadi float, maka nanti pembungkus/kontainernya akan collapse</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 9 | Clear</h2>
+            <p>Mengatasi masalah container/pembungkus collapse</p>
+            <p>3 cara: menggunakan overflow:auto, div kosong, teknik micro clearfix</p>
+            <p>overflow: auto, digunakan pada parent dari elemen yang menggunakan float</p>
+            <p>Property css clear: left, right, both. digunakan untuk menghentikan/membersihkan float. </p>
+            <p>Cara menggunakannya adalah dengan membuat div kosong pada akhir elemen yang ingin menggunakan float, lalu tambahkan style clear:left,right, atau both pada divnya</p>
+            <p>Micro clearfix: menggunakan script yang ada di google</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 11 | Position: Static & Relative</h2>
+            <p>Digunakan untuk memindahkan/menggeser elemen tanpa mempengaruhi elemen disekitarnya. tidak seperti margin</p>
+            <p>css property position: static (default), relative, absolute, fixed</p>
+            <p>Elemen yang diberi position selain value static, maka dapat menggunakan property top, left, bottom, dan right untuk mengatur posisinya </p>
+            <p>Position:relative; posisi relative ini bergerak mengacu pada posisi awalnya, posisi ini juga tidak menghilangkan posisi awalnya di "dimensi" sebelumnya, top:0; dan left: 0; tidak mengubah posisi ini. </p>
+            <p>position:relative; biasanya hanya digunakan untuk mengubah "dimensi" dari suatu elemen. position:absolute; yang biasanya digunakan untuk menggerakan posisi-posisi menggunakan top, right, left, bottom.</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 12 | Position: Absolute & Fixed</h2>
+            <p>Sama seperti relative, absolute juga memindahkan "dimensi" elemennya. hanya saja, jika pada relative posisinya masih ada dan menjadi acuan posisi relative. pada absolute, posisinya akan diisi oleh elemen selanjutnya.</p>
+            <p>position absolute bergerak berdasarkan posisi dari elemen parentnya yang berada pada dimensi (non-static) yang sama dengan elemen absolute.</p>
+            <p>position fixed selalu bergerak berdasarkan windownya (body) walaupun ada non-static terdekatnya</p>
+        </div>
+
+        <div class="episodes">
+            <h2>Episode 13 | Z-Index dan Penggunaan lain dari properti position</h2>
+            <p>Z-Index digunakan untuk mengatur tumpukan dari elemen non-static (absolute, fixed, relative). z-index:; | semakin tinggi nilai z-index maka elemennya akan makin terdepan (secara tumpukan)</p>
+        </div>
+
+        <p><b><i>Tips: Hanya ubah ukuran Width, karena Height akan mengikuti kotennya</i></b></p>
+        <p><b><i>Gunakan img html elemen ketika image yang ditampilkan dapat diprint. dan gunakan background-img css ketika hanya sebagai tampilan</i></b></p>
+    </div>
+
+</body>
+</html>
