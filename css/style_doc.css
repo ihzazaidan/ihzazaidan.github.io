@@ -76,6 +76,10 @@ figure {
     text-align: center;
 }
 
+iframe {
+    width: 50%;
+}
+
 div.articles {
     border: 1px solid black;
     /* margin: 20px auto; */
